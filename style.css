@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  button[type="submit"]:focus {
+    outline: none;
+  }
+  
+  #login-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #login-button:hover:after {
+    opacity: 1;
+  }
+  
+  #login-button:focus:after {
+    animation: 2s neon infinite alternate;
+    border-radius: 10px;
+  }
+  
+  @keyframes neon {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #4CAF50, 0 0 70px #4CAF50, 0 0 80px
+    }
+}
+
+
+
+
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  footer h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  footer input[type="email"] {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    width: 70%;
+  }
+  
+  footer button[type="submit"] {
+    background-color: #ff00ff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  footer button[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  footer .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer .col-md-4 {
+    flex-basis: 33.33%;
+    padding: 0 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    footer .col-md-4 {
+      flex-basis: 100%;
+     
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
